@@ -38,4 +38,4 @@ The project consists of the following main components:
    - The project includes functions for training the models and plotting training curves.
 
 
-**Note:** This README provides a high-level overview of the project and its code. Detailed code explanations, model architectures, and training results can be found in the accompanying Jupyter Notebook.
+**Note:** This README provides a overview of the project and its code. Detailed code explanations, model architectures, and training results can be found in the accompanying Jupyter Notebook.
