@@ -1,93 +1,60 @@
-# IBM-PyTorch-MNIST-project
+# IBM Deep Learning with PyTorch Course Project - MNIST CNN
 
-<!DOCTYPE html>
-<html>
+This repository contains code for a project completed as part of the IBM Deep Learning with PyTorch course. The project focuses on using Convolutional Neural Networks (CNN) to classify the MNIST dataset. This README file provides an overview of the project, its structure, and how to run the code.
 
-<head>
-    <meta charset="UTF-8">
-    <title>IBM Deep Learning with PyTorch Course Project - MNIST CNN</title>
-    <style>
-        body {
-            background-color: #f3f3f3;
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-        }
+## Project Overview
 
-        header {
-            background-color: #3498db;
-            color: #ffffff;
-            padding: 20px 0;
-        }
+In this project, we implement two different CNN models to classify hand-written digits in the MNIST dataset. We use PyTorch, a popular deep learning framework, for building and training the models. The MNIST dataset consists of 28x28 grayscale images of handwritten digits from 0 to 9. The objective is to create a model that can accurately classify these digits.
 
-        h1 {
-            font-size: 36px;
-        }
+## Project Structure
 
-        section {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #ffffff;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-            text-align: left;
-        }
+### Prerequisites
 
-        h2 {
-            color: #3498db;
-        }
+Before running the code, make sure you have the following prerequisites installed:
 
-        pre {
-            background-color: #f9f9f9;
-            border: 1px solid #e0e0e0;
-            border-radius: 5px;
-            padding: 10px;
-            font-size: 14px;
-            white-space: pre-wrap;
-        }
+- Python
+- PyTorch
+- Matplotlib
+- NumPy
+- pandas
 
-        ul {
-            list-style-type: square;
-        }
+### Code Overview
 
-        li {
-            margin-bottom: 10px;
-        }
+The project consists of the following main components:
 
-        .note {
-            background-color: #ffffcc;
-            padding: 10px;
-        }
+1. **Data Loading and Preprocessing**:
+   - We use PyTorch's data loading utilities to download and preprocess the MNIST dataset.
+   - The data is divided into training and validation sets.
 
-        .code {
-            font-family: 'Courier New', monospace;
-        }
+2. **CNN Model Implementation**:
+   - Two different CNN models are implemented, each in its own class:
+     - `CNN` - A simple CNN model.
+     - `CNN2` - A more complex CNN model.
+   - These models are designed for image classification tasks.
 
-        .highlight {
-            background-color: #e6f7ff;
-        }
-    </style>
-</head>
+3. **Training and Evaluation**:
+   - Training is performed using the training set.
+   - The models are evaluated using the validation set to measure accuracy and loss.
+   - The project includes functions for training the models and plotting training curves.
 
-<body>
-    <header>
-        <h1>IBM Deep Learning with PyTorch Course Project - MNIST CNN</h1>
-    </header>
+## Code Execution
 
-    <section>
-        <h2>Project Overview</h2>
-        <p>In this project, we implement two different CNN models to classify hand-written digits in the MNIST dataset.</p>
+To run the code, follow these steps:
 
-        <h2>Project Structure</h2>
-        <p>...</p>
+1. Ensure you have the required dependencies installed.
 
-        <h2>Code Execution</h2>
-        <p>...</p>
+2. Clone this GitHub repository to your local machine.
 
-        <p class="note"><strong>Note:</strong> This README provides a high-level overview of the project and its code. Detailed code explanations, model architectures, and training results can be found in the accompanying Jupyter Notebook.</p>
-    </section>
-</body>
+3. Open and execute the Jupyter Notebook or Python script provided. The main code is available in the notebook, and you can execute code cells to train and evaluate the models.
 
-</html>
+4. Ensure that you have a compatible GPU available for faster training. The code checks for GPU availability and uses it if found. If no GPU is available, the code will run on the CPU.
+
+5. Execute the code cells in the notebook or run the Python script to train the models. The training process will output training loss and validation accuracy for each epoch.
+
+6. The final training and validation loss, as well as accuracy, will be displayed, and training curves will be plotted to visualize the model's performance.
+
+That's it! You have successfully trained and evaluated CNN models on the MNIST dataset.
+
+For any questions or issues, feel free to contact the project author. Enjoy experimenting with deep learning using PyTorch!
+
+**Note:** This README provides a high-level overview of the project and its code. Detailed code explanations, model architectures, and training results can be found in the accompanying Jupyter Notebook.
