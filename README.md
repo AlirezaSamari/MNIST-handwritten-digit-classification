@@ -1,4 +1,4 @@
-# IBM Deep Learning with PyTorch Course Project - MNIST CNN
+#Deep Learning with PyTorch Project - MNIST CNN
 
 This repository contains code for a project completed as part of the IBM Deep Learning with PyTorch course. The project focuses on using Convolutional Neural Networks (CNN) to classify the MNIST dataset. This README file provides an overview of the project, its structure, and how to run the code.
 
